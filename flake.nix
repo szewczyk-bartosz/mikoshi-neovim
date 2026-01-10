@@ -13,6 +13,7 @@
 	outputs = { self, nixpkgs, nvf }: 
 	{
 		nixosModules.default = { config, pkgs, lib, ... }: {
+			imports = [ nvf.nixosModules.default ];
 			programs.nvf = {
 				enable = true;
 				settings.vim = {
