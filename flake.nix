@@ -25,6 +25,10 @@
         settings.vim = {
           vimAlias = false; # for now
 
+          globals = {
+            mapleader = "<space>";
+          };
+
           lineNumberMode = "number";
 
           clipboard = {
@@ -45,6 +49,13 @@
               mode = "i";
               action = "<Esc>";
             }
+
+            {
+              key = "<leader>e";
+              mode = "n";
+              action = ":Neotree toggle<CR>";
+              desc = "Toggle neotree";
+            }
           ];
 
           lsp = {
@@ -64,8 +75,51 @@
               format.enable = true;
               lsp.enable = true;
             };
+
+            rust = {
+              enable = true;
+              format.enable = true;
+              lsp.enable = true;
+            };
+
+            java = {
+              enable = true;
+              lsp.enable = true;
+            };
+
+            # Javascript / Typescript
+            ts = {
+              enable = true;
+              format.enable = true;
+              lsp.enable = true;
+            };
+
+            css = {
+              enable = true;
+              format.enable = true;
+              lsp.enable = true;
+            };
+
+            html = {
+              enable = true;
+              format.enable = true;
+              lsp.enable = true;
+            };
           };
 
+          filetree.neo-tree = {
+            enable = true;
+            setupOpts = {
+              window = {
+                position = "float";
+              };
+              enable_cursor_hijack = true;
+              enable_git_status = true;
+              enable_modified_markers = true;
+              enable_opened_markers = true;
+              enable_git_status_async = true;
+            };
+          };
           treesitter = {
             enable = true;
             grammars = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
