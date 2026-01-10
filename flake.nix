@@ -43,6 +43,13 @@
 
           autopairs.nvim-autopairs.enable = true;
 
+          nvim.comments.comment-nvim = {
+            enable = true;
+            setupOpts = {
+              mappings.basic = true;
+            };
+          };
+
           git.enable = true;
           terminal.toggleterm = {
             enable = true;
