@@ -43,6 +43,8 @@
 
           autopairs.nvim-autopairs.enable = true;
 
+          visuals.indent-blankline.enable = true;
+
           nvim.comments.comment-nvim = {
             enable = true;
             setupOpts = {
