@@ -17,6 +17,8 @@
 			programs.nvf = {
 				enable = true;
 				settings.vim = {
+					vimAlias = false; # for now
+
 					theme = {
 						enable = true;
 						name = "tokyonight";
