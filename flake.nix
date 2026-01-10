@@ -185,6 +185,12 @@
               action = ":lua vim.diagnostic.open_float(nil, {focus = false, scope='cursor'})<CR>";
               desc = "show diagnostic under cursor";
             }
+            {
+              key = " ";
+              mode = "t";
+              action = " ";
+              desc = "workaround for lazygit and terminal integration";
+            }
           ];
 
           autocomplete.blink-cmp = {
