@@ -62,6 +62,7 @@
           dashboard.dashboard-nvim = {
             enable = true;
             setupOpts = {
+              disable_move = true;
               theme = "doom";
               config = {
                 header = [
