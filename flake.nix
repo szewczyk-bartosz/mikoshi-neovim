@@ -26,7 +26,7 @@
           vimAlias = false; # for now
 
           globals = {
-            mapleader = "<space>";
+            mapleader = " ";
           };
 
           lineNumberMode = "number";
@@ -43,6 +43,9 @@
             expandtab = true;
           };
 
+          binds.whichKey = {
+            enable = true;
+          };
           keymaps = [
             {
               key = "jk";
@@ -56,11 +59,32 @@
               action = ":Neotree toggle<CR>";
               desc = "Toggle neotree";
             }
+            {
+              key = "gd";
+              mode = "n";
+              action = ":lua vim.diagnostic.open_float(nil, {focus = false, scope='cursor'})<CR>";
+              desc = "show diagnostic under cursor";
+            }
           ];
+
+          autocomplete.blink-cmp = {
+            enable = true;
+            friendly-snippets.enable = true;
+            setupOpts = {
+              signature.enabled = true;
+            };
+            mappings = {
+              close = "<Esc>";
+              confirm = "<CR>";
+              next = "<Tab>";
+              previous = "<S-Tab>";
+            };
+          };
 
           lsp = {
             enable = true;
             formatOnSave = true;
+            # inlayHints.enable = true;
           };
 
           languages = {
