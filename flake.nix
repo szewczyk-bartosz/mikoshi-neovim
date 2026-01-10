@@ -39,6 +39,17 @@
             noice.enable = true;
           };
 
+          tabline = {
+            nvimBufferline = {
+              enable = true;
+              mappings = {
+                closeCurrent = "bq";
+              };
+              setupOpts = {
+                always_show_bufferline = true;
+              };
+            };
+          };
           clipboard = {
             enable = true;
             registers = "unnamedplus";
