@@ -41,6 +41,8 @@
 
           mini.statusline.enable = true;
 
+          autopairs.nvim-autopairs.enable = true;
+
           git.enable = true;
           terminal.toggleterm = {
             enable = true;
