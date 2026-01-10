@@ -35,6 +35,10 @@
             enable = true;
           };
 
+          ui = {
+            noice.enable = true;
+          };
+
           clipboard = {
             enable = true;
             registers = "unnamedplus";
