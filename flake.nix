@@ -31,6 +31,10 @@
 
           lineNumberMode = "number";
 
+          telescope = {
+            enable = true;
+          };
+
           clipboard = {
             enable = true;
             registers = "unnamedplus";
