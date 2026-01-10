@@ -20,7 +20,7 @@
 					theme = {
 						enable = true;
 						name = "tokyonight";
-						style = "dark";
+						# style = "dark"; # I dont thikn this does what I think it does
 					};
 				};
 			};
