@@ -37,6 +37,15 @@
 
           ui = {
             noice.enable = true;
+            colorizer = {
+              enable = true;
+              setupOpts = {
+                "*" = {};
+                javascript = {
+                  AARRGGBB = false;
+                };
+              };
+            };
           };
 
           mini.statusline.enable = true;
