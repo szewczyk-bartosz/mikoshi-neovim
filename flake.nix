@@ -41,6 +41,20 @@
 
           mini.statusline.enable = true;
 
+          git.enable = true;
+          terminal.toggleterm = {
+            enable = true;
+            lazygit = {
+              enable = true;
+              direction = "float";
+            };
+            mappings = {
+              open = "<leader>t";
+            };
+            setupOpts = {
+              direction = "float";
+            };
+          };
           tabline = {
             nvimBufferline = {
               enable = true;
