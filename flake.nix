@@ -39,6 +39,8 @@
             noice.enable = true;
           };
 
+          mini.statusline.enable = true;
+
           tabline = {
             nvimBufferline = {
               enable = true;
