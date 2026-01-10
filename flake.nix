@@ -36,8 +36,10 @@
 							event = ["FileType"];
 							pattern = ["nix"];
 							callback = lib.generators.mkLuaInline ''
-								vim.opt.tabstop = 2
-								vim.opt.shiftwidth = 2
+							function()
+									vim.opt.tabstop = 2
+									vim.opt.shiftwidth = 2
+							end
 							'';
 						}
 					];
