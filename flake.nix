@@ -35,6 +35,11 @@
             enable = true;
           };
 
+          utility.motion.flash-nvim = {
+            enable = true;
+            mappings.jump = "<leader><leader>";
+          };
+
           ui = {
             noice.enable = true;
             colorizer = {
@@ -57,7 +62,7 @@
           dashboard.dashboard-nvim = {
             enable = true;
           };
-          nvim.comments.comment-nvim = {
+          comments.comment-nvim = {
             enable = true;
             setupOpts = {
               mappings.basic = true;
