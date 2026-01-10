@@ -57,7 +57,19 @@
 
           autopairs.nvim-autopairs.enable = true;
 
-          visuals.indent-blankline.enable = true;
+          visuals.indent-blankline = {
+            enable = true;
+            setupOpts = {
+              exclude = {
+                filetypes = [
+                  "dashboard"
+                  "neo-tree"
+                  "lazy"
+                  "help"
+                ];
+              };
+            };
+          };
 
           dashboard.dashboard-nvim = {
             enable = true;
@@ -130,7 +142,9 @@
                 closeCurrent = "bq";
               };
               setupOpts = {
-                always_show_bufferline = true;
+                options = {
+                  always_show_bufferline = true;
+                };
               };
             };
           };
