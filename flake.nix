@@ -19,6 +19,29 @@
 				settings.vim = {
 					vimAlias = false; # for now
 
+					lineNumberMode = "number";
+
+					clipboard.enable = true;
+					clipboard.registers = "unnamedplus";
+
+					options = {
+						tabstop = 4;
+						shiftwidth = 4;
+						expandtab = true;
+					};
+
+					autocmds = [
+						{
+							desc = "set tabstop and tabwidth to 2 for nix files";
+							event = ["FileType"];
+							pattern = ["nix"];
+							callback = lib.generators.mkLuaInline ''
+								vim.opt.tabstop = 2
+								vim.opt.shiftwidth = 2
+							'';
+						}
+					];
+
 					theme = {
 						enable = true;
 						name = "tokyonight";
