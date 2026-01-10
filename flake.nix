@@ -45,6 +45,9 @@
 
           visuals.indent-blankline.enable = true;
 
+          dashboard.dashboard-nvim = {
+            enable = true;
+          };
           nvim.comments.comment-nvim = {
             enable = true;
             setupOpts = {
