@@ -38,6 +38,8 @@ This category is what I class as things you will use often, and therefore there 
 | `<Tab>` / `<S-Tab>` | Next / Previous buffer |
 | `]d` / `[d` | Next / Previous diagnostic |
 | `]c` / `[c` | Next / Previous git hunk |
+| `]x` / `[x` | Next / Previous git conflict |
+| `<Esc><Esc>` | Toggle terminal |
 | `K` | Hover documentation |
 | `gcc` / `gc` | Toggle comment (line / with motion) |
 | `gbc` / `gb` | Toggle block comment (line / with motion) |
@@ -67,28 +69,30 @@ This will hopefully aid you in developing muscle memory more quickly, as the com
 
 #### LSP Actions (`<leader>l*`)
 
-| Binding | Action |
-|---------|--------|
-| `<leader>ld` | Go to **definition** |
-| `<leader>lr` | Show **references** |
-| `<leader>li` | Go to **implementation** |
-| `<leader>lt` | Go to **type** definition |
-| `<leader>ln` | Re**name** symbol |
-| `<leader>la` | Code **action** |
-| `<leader>ls` | Document **symbols** |
-| `<leader>lh` | **Hover** documentation |
-| `<leader>lf` | **Format** buffer |
+*Note: Some LSP actions also have traditional Vim bindings (e.g., `grr` for references, `grn` for rename). The `<leader>l*` bindings are provided for consistency and discoverability.*
+
+| Binding | Action | Traditional Binding |
+|---------|--------|---------------------|
+| `<leader>ld` | Go to **definition** | - |
+| `<leader>lr` | Show **references** | `grr` |
+| `<leader>li` | Go to **implementation** | `gri` |
+| `<leader>lt` | Go to **type** definition | `grt` |
+| `<leader>ln` | Re**name** symbol | `grn` |
+| `<leader>la` | Code **action** | `gra` |
+| `<leader>ls` | Document **symbols** | `gO` |
+| `<leader>lh` | **Hover** documentation | `K` |
+| `<leader>lf` | **Format** buffer | - |
 
 ---
 
 #### Diagnostics (`<leader>d*`)
 
-| Binding | Action |
-|---------|--------|
-| `<leader>dd` | Show **diagnostic** at cursor |
-| `<leader>dl` | **List** all diagnostics |
-| `<leader>dn` | **Next** diagnostic |
-| `<leader>dp` | **Previous** diagnostic |
+| Binding | Action | Alternative |
+|---------|--------|-------------|
+| `<leader>dd` | Show **diagnostic** at cursor | - |
+| `<leader>dl` | **List** all diagnostics (Telescope) | - |
+| `<leader>dn` | **Next** diagnostic | `]d` |
+| `<leader>dp` | **Previous** diagnostic | `[d` |
 
 ---
 
@@ -102,9 +106,12 @@ This will hopefully aid you in developing muscle memory more quickly, as the com
 | `<leader>gu` | **Undo** stage hunk |
 | `<leader>gp` | **Preview** hunk |
 | `<leader>gb` | **Blame** line |
-| `<leader>gd` | **Diff** this |
+| `<leader>gdd` | **Diff** this |
+| `<leader>gdp` | **Diff** project |
 | `<leader>gS` | **Stage** buffer (entire file) |
 | `<leader>gR` | **Reset** buffer (entire file) |
+| `<leader>gtb` | **Toggle** **blame** |
+| `<leader>gtd` | **Toggle** **deleted** |
 
 **Git Conflicts:**
 
@@ -119,29 +126,23 @@ This will hopefully aid you in developing muscle memory more quickly, as the com
 
 #### Buffers (`<leader>b*`)
 
-| Binding | Action |
-|---------|--------|
-| `<leader>bc` | **Choose** buffer (pick) |
-| `<leader>bq` | **Quit** buffer (close) |
-| `<leader>bn` | **Next** buffer |
-| `<leader>bp` | **Previous** buffer |
-| `<leader>bsd` | **Sort** by **directory** |
-| `<leader>bse` | **Sort** by **extension** |
-| `<leader>bsi` | **Sort** by **ID** |
+| Binding | Action | Alternative |
+|---------|--------|-------------|
+| `<leader>bc` | **Choose** buffer (pick) | - |
+| `<leader>bq` | **Quit** buffer (close) | - |
+| `<leader>bn` | **Next** buffer | `<Tab>` |
+| `<leader>bp` | **Previous** buffer | `<S-Tab>` |
+| `<leader>bsd` | **Sort** by **directory** | - |
+| `<leader>bse` | **Sort** by **extension** | - |
+| `<leader>bsi` | **Sort** by **ID** | - |
 
----
-
-#### Terminal (`<leader>t*`)
-
-| Binding | Action |
-|---------|--------|
-| `<leader>tt` | **Toggle terminal** |
+*Note: `<Tab>` and `<S-Tab>` are faster alternatives for buffer navigation.*
 
 ---
 
 #### Find (Telescope) (`<leader>f*`)
 
-**Note:** The Telescope bindings are extensive and will be reorganized in a future update for better discoverability.
+**Core File & Text Search:**
 
 | Binding | Action |
 |---------|--------|
@@ -153,6 +154,27 @@ This will hopefully aid you in developing muscle memory more quickly, as the com
 | `<leader>fr` | **Resume** previous search |
 | `<leader>fs` | Treesitter **symbols** |
 
-*Additional Telescope bindings for Git and LSP features are available but will be documented after reorganization.*
+**LSP via Telescope (`<leader>fl*`):**
+
+| Binding | Action |
+|---------|--------|
+| `<leader>fld` | Diagnostics |
+| `<leader>flD` | LSP Definitions |
+| `<leader>fli` | LSP Implementations |
+| `<leader>flr` | LSP References |
+| `<leader>flt` | LSP Type Definitions |
+| `<leader>flsb` | LSP Document Symbols |
+| `<leader>flsw` | LSP Workspace Symbols |
+
+**Git via Telescope (`<leader>fv*`):**
+
+| Binding | Action |
+|---------|--------|
+| `<leader>fvf` | Git files |
+| `<leader>fvcw` | Git commits |
+| `<leader>fvcb` | Git buffer commits |
+| `<leader>fvb` | Git branches |
+| `<leader>fvs` | Git status |
+| `<leader>fvx` | Git stash |
 
 ---
