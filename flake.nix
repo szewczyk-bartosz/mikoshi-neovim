@@ -159,7 +159,7 @@
               direction = "float";
             };
             mappings = {
-              open = "<leader>t";
+              open = "<Esc><Esc>";
             };
             setupOpts = {
               direction = "float";
@@ -169,7 +169,15 @@
             nvimBufferline = {
               enable = true;
               mappings = {
-                closeCurrent = "bq";
+                closeCurrent = "<leader>bq";
+                cycleNext = "<Tab>";
+                cyclePrevious = "<S-Tab>";
+                pick = "<leader>bc";
+                sortByDirectory = "<leader>bsd";
+                sortByExtension = "<leader>bse";
+                sortById = "<leader>bsi";
+                moveNext = "<leader>bmn"; # Disable
+                movePrevious = "<leader>bmp"; # Disable
               };
               setupOpts = {
                 options = {
@@ -205,12 +213,6 @@
               mode = "n";
               action = ":Neotree toggle<CR>";
               desc = "Toggle neotree";
-            }
-            {
-              key = "gd";
-              mode = "n";
-              action = ":lua vim.diagnostic.open_float(nil, {focus = false, scope='cursor'})<CR>";
-              desc = "show diagnostic under cursor";
             }
             {
               key = " ";
@@ -280,13 +282,14 @@
               previousDiagnostic = "<leader>dp";
 
               # Not needed
-              goToDeclaration = "";
-              documentHighlight = "";
-              addWorkspaceFolder = "";
-              listWorkspaceFolders = "";
-              listWorkspaceSymbols = "";
-              signatureHelp = "";
-              toggleFormatOnSave = "";
+              goToDeclaration = null;
+              documentHighlight = null;
+              addWorkspaceFolder = null;
+              removeWorkspaceFolder = null;
+              listWorkspaceFolders = null;
+              listWorkspaceSymbols = null;
+              signatureHelp = null;
+              toggleFormatOnSave = null;
             };
           };
 
