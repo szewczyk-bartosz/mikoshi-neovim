@@ -37,7 +37,7 @@
 
           utility.motion.flash-nvim = {
             enable = true;
-            mappings.jump = "<leader><leader>";
+            mappings.jump = "s";
           };
 
           ui = {
