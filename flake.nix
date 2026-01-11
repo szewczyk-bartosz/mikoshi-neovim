@@ -196,6 +196,8 @@
             tabstop = 4;
             shiftwidth = 4;
             expandtab = true;
+            ignorecase = true;
+            smartcase = true;
           };
 
           binds.whichKey = {
