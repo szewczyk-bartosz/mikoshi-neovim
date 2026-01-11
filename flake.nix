@@ -191,6 +191,31 @@
               action = " ";
               desc = "workaround for lazygit and terminal integration";
             }
+
+            {
+              key = "<C-h>";
+              mode = "n";
+              action = "<C-w>h";
+              desc = "Move to left split";
+            }
+            {
+              key = "<C-j>";
+              mode = "n";
+              action = "<C-w>j";
+              desc = "Move to bottom split";
+            }
+            {
+              key = "<C-k>";
+              mode = "n";
+              action = "<C-w>k";
+              desc = "Move to top split";
+            }
+            {
+              key = "<C-l>";
+              mode = "n";
+              action = "<C-w>l";
+              desc = "Move to right split";
+            }
           ];
 
           autocomplete.blink-cmp = {
