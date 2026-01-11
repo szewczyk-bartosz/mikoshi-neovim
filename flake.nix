@@ -124,7 +124,34 @@
             };
           };
 
-          git.enable = true;
+          git = {
+            enable = true;
+
+            git-conflict.mappings = {
+              ours = "<leader>gco";
+              theirs = "<leader>gct";
+              both = "<leader>gcb";
+              none = "<leader>gcn";
+              nextConflict = "]x"; # Keep the existing one
+              prevConflict = "[x"; # Keep the existing one
+            };
+            gitsigns.mappings = {
+              blameLine = "<leader>gb";
+              diffProject = "<leader>gdp";
+              diffThis = "<leader>gdd";
+
+              resetBuffer = "<leader>gR";
+              stageBuffer = "<leader>gS";
+              toggleBlame = "<leader>gtb";
+              toggleDeleted = "<leader>gtd";
+
+              previewHunk = "<leader>gp";
+              previousHunk = "[c";
+              nextHunk = "]c";
+              stageHunk = "<leader>gs";
+              undoStageHunk = "<leader>gu";
+            };
+          };
           terminal.toggleterm = {
             enable = true;
             lazygit = {
@@ -236,6 +263,31 @@
             enable = true;
             formatOnSave = true;
             # inlayHints.enable = true;
+            mappings = {
+              goToDefinition = "<leader>ld";
+              listReferences = "<leader>lr";
+              listImplementations = "<leader>li";
+              goToType = "<leader>lt";
+              renameSymbol = "<leader>ln";
+              codeAction = "<leader>la";
+              listDocumentSymbols = "<leader>ls";
+              hover = "<leader>lh";
+              format = "<leader>lf";
+
+              # Diagnostics
+              openDiagnosticFloat = "<leader>dd";
+              nextDiagnostic = "<leader>dn";
+              previousDiagnostic = "<leader>dp";
+
+              # Not needed
+              goToDeclaration = "";
+              documentHighlight = "";
+              addWorkspaceFolder = "";
+              listWorkspaceFolders = "";
+              listWorkspaceSymbols = "";
+              signatureHelp = "";
+              toggleFormatOnSave = "";
+            };
           };
 
           languages = {
