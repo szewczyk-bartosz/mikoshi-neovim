@@ -62,6 +62,7 @@ Effort was put in to ensure that `letter_1` is the first letter of the **categor
 - `letter_2 = d` (definition)
 
 This gives us: `<leader> + l + d`
+Which you can remember as: `<leader> + l(sp) + d(iagnositc)`
 
 This will hopefully aid you in developing muscle memory more quickly, as the commands you are typing out feel akin to real sentences.
 
