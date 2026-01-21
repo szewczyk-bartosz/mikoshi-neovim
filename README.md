@@ -4,6 +4,9 @@ Focus is on simplicity and building muscle memory.
 
 Installation instructions will be ready soonish, will be at the bottom. First up, how to use it.
 
+## TODOs:
+- implement options
+
 ---
 
 ## Organisation of Functionality
