@@ -1,6 +1,6 @@
 {
   inputs = {
-    nixpkgs.url = "nixpkgs/nixos-24.11";
+    nixpkgs.url = "nixpkgs/nixos-unstable";
 
     nvf = {
       url = "github:NotAShelf/nvf";
@@ -332,12 +332,12 @@
               lsp.enable = true;
             };
 
-            html = {
-              enable = true;
-              format.enable = true;
-              lsp.enable = true;
-            };
-          };
+            #html = {
+              #enable = true;
+              #format.enable = true;
+              #lsp.enable = true;
+            #};
+          #};
 
           filetree.neo-tree = {
             enable = true;
