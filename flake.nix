@@ -337,7 +337,7 @@
               #format.enable = true;
               #lsp.enable = true;
             #};
-          #};
+          };
 
           filetree.neo-tree = {
             enable = true;
