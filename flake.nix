@@ -209,7 +209,12 @@
               mode = "i";
               action = "<Esc>";
             }
-
+            {
+              key = "<Esc>";
+              mode = ["t"];
+              action = "<C-\\><C-n>";
+              desc = "Exit terminal insert mode";
+            }
             {
               key = "<leader>e";
               mode = "n";
