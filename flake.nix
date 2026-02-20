@@ -159,7 +159,7 @@
               direction = "float";
             };
             mappings = {
-              open = "<Esc><Esc>";
+              open = "<F12>";
             };
             setupOpts = {
               direction = "float";
@@ -333,9 +333,9 @@
             };
 
             #html = {
-              #enable = true;
-              #format.enable = true;
-              #lsp.enable = true;
+            #enable = true;
+            #format.enable = true;
+            #lsp.enable = true;
             #};
           };
 
