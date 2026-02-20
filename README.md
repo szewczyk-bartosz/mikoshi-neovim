@@ -42,7 +42,7 @@ This category is what I class as things you will use often, and therefore there 
 | `]d` / `[d` | Next / Previous diagnostic |
 | `]c` / `[c` | Next / Previous git hunk |
 | `]x` / `[x` | Next / Previous git conflict |
-| `<Esc><Esc>` | Toggle terminal |
+| `<F12>` | Toggle terminal |
 | `K` | Hover documentation |
 | `gcc` / `gc` | Toggle comment (line / with motion) |
 | `gbc` / `gb` | Toggle block comment (line / with motion) |
