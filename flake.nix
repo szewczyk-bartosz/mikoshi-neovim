@@ -40,6 +40,13 @@
             mappings.jump = "s";
           };
 
+          utility.outline.aerlial-nvim = {
+            enable = true;
+            mappings = {
+              toggle = "<leader>lo";
+            };
+          };
+
           ui = {
             noice.enable = true;
             colorizer = {
