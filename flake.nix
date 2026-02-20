@@ -40,7 +40,7 @@
             mappings.jump = "s";
           };
 
-          utility.outline.aerlial-nvim = {
+          utility.outline.aerial-nvim = {
             enable = true;
             mappings = {
               toggle = "<leader>lo";
