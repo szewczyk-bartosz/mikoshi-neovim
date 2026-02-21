@@ -86,6 +86,7 @@ This will hopefully aid you in developing muscle memory more quickly, as the com
 | `<leader>ls` | Document **symbols** | `gO` |
 | `<leader>lh` | **Hover** documentation | `K` |
 | `<leader>lf` | **Format** buffer | - |
+| `<leader>lo` | **Outline** (Aerial) | - |
 
 ---
 
