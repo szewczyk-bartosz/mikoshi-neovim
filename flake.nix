@@ -344,11 +344,11 @@
               lsp.enable = true;
             };
 
-            #html = {
-            #enable = true;
-            #format.enable = true;
-            #lsp.enable = true;
-            #};
+            html = {
+              enable = true;
+              format.enable = true;
+              lsp.enable = true;
+            };
           };
 
           filetree.neo-tree = {
