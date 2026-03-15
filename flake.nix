@@ -404,7 +404,7 @@
             }
           ];
 
-          theme = {
+          theme = lib.mkDefault {
             enable = lib.mkDefault true;
             name = lib.mkDefault "tokyonight";
             style = lib.mkDefault "night";
