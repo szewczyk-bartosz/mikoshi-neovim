@@ -404,10 +404,11 @@
             }
           ];
 
-          theme = lib.mkDefault {
-            enable = lib.mkDefault true;
-            name = lib.mkDefault "tokyonight";
-            style = lib.mkDefault "night";
+          theme = {
+            # this is messy, but its a workaround that allows stylix to work if included
+            enable = lib.mkOverride 150 true;
+            name = lib.mkOverride 150 "tokyonight";
+            style = lib.mkOverride 150 "night";
           };
         };
       };
