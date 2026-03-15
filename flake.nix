@@ -404,10 +404,10 @@
             }
           ];
 
-          theme = lib.mkDefault {
-            enable = false;
-            name = "tokyonight";
-            style = "night";
+          theme = {
+            enable = lib.mkDefault true;
+            name = lib.mkDefault "tokyonight";
+            style = lib.mkDefault "night";
           };
         };
       };
